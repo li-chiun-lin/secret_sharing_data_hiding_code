@@ -1,0 +1,30 @@
+# 1. Ignore all build outputs
+**/x64/
+**/Debug/
+**/Release/
+**/out/
+*.log
+*.tlog
+*.obj
+*.pdb
+*.bbl
+*.blg
+
+*__pycache__*
+
+scratch/*
+
+*.aux
+*.synctex.gz
+*.pdf
+
+# 2. Ignore Visual Studio internal junk
+.vs/
+*.user
+*.suo
+*.filters
+
+# 3. ENSURE your external binaries are tracked
+# Even if they are inside a folder that might otherwise be ignored
+!libtiff/lib/tiff.lib
+!libtiff/include/*.h
